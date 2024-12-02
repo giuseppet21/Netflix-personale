@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torriflix</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="navbar">
+        <img id="logo" src="logo.png" alt="logo">
+        <ul id="navbar-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Serie</a></li>
+            <li><a href="">Film</a></li>
+            <li><a href="">Nuovi e Popolari</a></li>
+            <li><a href="">La Mia Lista</a></li>
+            <li><a href="">Sfoglia per Lingua</a></li>
+        </ul>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="search-bar" placeholder="Cerca...">
+            </div>
+            <i class="fas fa-search" id="search-icon"></i>
+            <i class="fas fa-bell" id="notification-icon"></i>
+        </div>
+    </div>
+    
+    <div id="preview-container">
+        <video autoplay muted loop id="preview-video">
+            <source src="interstellar.mp4" type="video/mp4">
+        </video>
+        <div id="preview-overlay">
+            <div id="preview-details">
+                <h3 id="preview-title">Interstellar</h3>
+                <p>Un gruppo di scienziati deve viaggiare attraverso un buco di materia nello spazio-tempo per evitare il collasso dell'universo.</p>
+                <div class="button-container">
+                    <button><i class="fas fa-play"></i> Guarda ora</button>
+                    <button><i class="fas fa-volume-up"></i></button>
+                </div>
+            </div>
+            <div class="age-rating">
+                <span>13+</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="categories">
+        <div class="category">
+            <h3>Azione & Avventura</h3>
+            <div class="thumbnails-container">
+                <img class="thumbnail" src="lost.jpg" alt="Lost">
+                <img class="thumbnail" src="mad-max.jpg" alt="Mad Max">
+                <img class="thumbnail" src="need-for-speed.jpg" alt="Need for Speed">
+                <img class="thumbnail" src="supergirl.jpg" alt=Supergirl">
+                <img class="thumbnail" src="superman & lois.jpg" alt="Superman & lois">
+                <img class="thumbnail" src="mission impossible.jpg" alt="Mission Impossible">
+            </div>
+        </div>
+        
+        <div class="category">
+            <h3>Commedie</h3>
+            <div class="thumbnails-container">
+                <img class="thumbnail" src="castaway-on-the-moon.jpg" alt="Castaway on the Moon">
+                <img class="thumbnail" src="the-big-lebowski.jpg" alt="The Big Lebowski">
+                <img class="thumbnail" src="naked-gun.jpg" alt="Naked Gun">
+                <img class="thumbnail" src="the hangover.jpg" alt="The Hangover">
+                <img class="thumbnail" src="superbad.jpg" alt="Superbad">
+                <img class="thumbnail" src="21 jump street.jpg" alt="21 Jump Street">
+            </div>
+        </div>
+        
+        <div class="category">
+            <h3>Drammatici</h3>
+            <div class="thumbnails-container">
+                <img class="thumbnail" src="fight-club.jpg" alt="Fight Club">
+                <img class="thumbnail" src="three-iron.jpg" alt="Three Iron">
+                <img class="thumbnail" src="breaking-bad.jpg" alt="Breaking Bad">
+                <img class="thumbnail" src="titanic.jpg" alt="Titanic">
+                <img class="thumbnail" src="perfume.jpg" alt="Perfume">
+                <img class="thumbnail" src="joe black.jpg" alt="Joe Black">
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
